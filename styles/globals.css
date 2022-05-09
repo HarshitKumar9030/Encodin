@@ -1,16 +1,96 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.bar-1 {
+  transition: all 0.2s ease 0s;
 }
 
-* {
-  box-sizing: border-box;
+.navImg img {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.niwh:hover svg {
+  transform: rotate(180deg);
+}
+.button-san-nav {
+  transition: color 0.2s ease 0s, background 0.2s ease 0s;
+}
+
+.bar-1:hover span {
+  --tw-translate-x: 0.5rem /* 8px */;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.signup:hover {
+  transition: all 0.3s ease 0s;
+  background-color: rgb(22, 51, 255) !important;
+  color: rgb(255, 255, 255) !important;
+  transition: background 0.2s ease 0s;
+}
+
+.login:hover {
+  transition: all 0.3s ease 0s;
+}
+
+@media (min-width: 915px) {
+  .navItems {
+    display: flex;
+  }
+}
+.navItems {
+  right: 128px;
+}
+
+.fNQgRF {
+  border: 1.5px solid rgb(214, 220, 234);
+  height: 0px;
+  margin: 18px 24px;
+  position: absolute;
+  right: 54px;
+  transform: rotate(90deg);
+  width: 24px;
+}
+
+@media (min-width: 768px) {
+  .fNQgRF {
+    margin: 35px 24px;
+  }
+}
+
+@media (min-width: 440px) {
+  .navButtons {
+    display: flex;
+  }
+  .fNQgRF {
+    display: flex;
+  }
+
+  .hd83dg {
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 915px) {
+  .fNQgRF {
+    display: none;
+  }
+  .navButtons {
+    right: 0;
+  }
+  .hd83dg {
+    display: none;
+  }
 }
